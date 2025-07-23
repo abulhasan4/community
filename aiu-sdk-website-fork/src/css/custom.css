@@ -1,0 +1,85 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #004dbf;
+  --ifm-color-primary-dark: #0045ac;
+  --ifm-color-primary-darker: #00327c;
+  --ifm-color-primary-darkest: #003686; 
+  --ifm-color-primary-light: #0055d2;
+  --ifm-color-primary-lighter: #0059dc;
+  --ifm-color-primary-lightest: #0060ef;
+  --ifm-code-font-size: 95%;
+  --ifm-menu-color: #fdfdfd;
+  --ifm-menu-color-active:  white;
+  --ifm-menu-color-background-active: var(--ifm-color-primary-lightest); 
+  --ifm-menu-color-background-hover: var(--ifm-color-primary-light); 
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary-lightest: #689cda;
+  --ifm-color-primary-lighter: #4a88d2;
+  --ifm-color-primary-light: #4082d0;
+  --ifm-color-primary: #3175c6;
+  --ifm-color-primary-dark: #2c69b2;
+  --ifm-color-primary-darker: #2a63a8;
+  --ifm-color-primary-darkest: #22528b;
+  --ifm-heading-color: #ffffff;  /* Hero header */
+  --ifm-hero-text-color: #ffffff; /* Hero text (unused) as it is computed from "base-inverse" */
+  --ifm-font-color-base-inverse: #ffffff; /* Hero text (paragraph) */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* See https://docusaurus.io/docs/styling-layout for (base) class names for themes */
+
+/* This style sets the left sidebar (nav. menu) background and foreground colors: */
+nav.menu.thin-scrollbar {
+  color: rgb(255, 255, 255);
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* This style is used for sidebar "type: 'category'" list items that are "deprecated": */
+.category-label-deprecated {
+  font-style: italic;
+}
+
+/* This style sets the sidebar's level 1 item's "menu links" (a.k.a. html anchors <a>) where "type: 'category'": */
+/* Primarily used to set the font-weight and (text) color. 
+/ *NOTE: level 2 items will inherit these styles if not specifically set for their level */
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1 .menu__link {
+  font-weight: 600;
+  /* color: greenyellow; */
+}
+
+/* This style sets the sidebar's level 1 item's "menu links" (a.k.a. html anchors <a>) where "type: 'doc'": */
+/* Primarily used to set the font-weight and (text) color */
+li.theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-1 .menu__link {
+  font-weight: 600;
+  /* color: red; */
+} 
+
+/* This style sets the sidebar's level 2 item's "menu links" (a.k.a. html anchors <a>) where "type: 'doc'": */
+/* Primarily used to set the font-weight and (text) color */
+li.theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-2 .menu__link {
+    font-weight: 200;
+    /* color: greenyellow; */
+} 
+
+/* This style sets the sidebar's level 2 item's (a.k.a html list items <li>) where "type: 'doc'": */
+/* Can be used to set font and background color differently (color and font weight has no effect) */
+/* li.theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-2 {
+  background-color: var(--ifm-color-primary-dark);
+  font-family:'Courier New', Courier, monospace;
+} */
+
+/* <a href="#" class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true">Supported models</a> */
+/* NOTE: The following in-linen SVG "caret" only applies to "light" mode (not "dark" mode) */
+.menu .menu__link.menu__link--sublist:after {
+  background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(232,232,232,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+}

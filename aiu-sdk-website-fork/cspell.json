@@ -1,0 +1,28 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "aiulab",
+        "Arxiv",
+        "baremetal",
+        "callouts",
+        "cmfcmf",
+        "CUDA",
+        "deepset",
+        "Geospatial",
+        "Infima",
+        "instructlab",
+        "Prithvi",
+        "reposited",
+        "roadmapped",
+        "Safetensor",
+        "Spyre",
+        "sublist",
+        "tinyroberta",
+        "Untruncated"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
